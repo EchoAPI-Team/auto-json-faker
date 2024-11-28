@@ -1,0 +1,30 @@
+{
+  "name": "auto-json-faker",
+  "version": "1.0.1",
+  "description": "Processing data returned by AI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EchoAPI-Team/auto-json-faker.git"
+  },
+  "keywords": [
+    "auto-json-faker"
+  ],
+  "author": "Daniel Anderson <support@echoapi.com> (https://github.com/Apipost-Team)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EchoAPI-Team/auto-json-faker/issues"
+  },
+  "homepage": "https://github.com/EchoAPI-Team/auto-json-faker#readme",
+  "dependencies": {
+    "apipost-mock-schema": "^0.0.44",
+    "json2json-schema": "^0.2.6",
+    "json5": "^2.2.3",
+    "lodash": "^4.17.21",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.6.2"
+  }
+}
