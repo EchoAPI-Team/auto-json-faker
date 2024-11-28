@@ -81,7 +81,6 @@ For any questions or issues, please contact our team at support@example.com.
 ## Acknowledgements
 
 - [json2json-schema](https://www.npmjs.com/package/json2json-schema) for schema conversion.
-- [apipost-mock-schema](https://www.npmjs.com/package/apipost-mock-schema) for mock data generation.
 - [xml2js](https://www.npmjs.com/package/xml2js) and [xml-js](https://www.npmjs.com/package/xml-js) for XML parsing and conversion.
 
 ---
