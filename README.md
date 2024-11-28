@@ -1,5 +1,7 @@
 # auto-json-faker
 
+[English](https://github.com/EchoAPI-Team/auto-json-faker/blob/main/README.md)｜[日本語](https://github.com/EchoAPI-Team/auto-json-faker/blob/main/README_ja.md)
+
 **auto-json-faker** is a powerful library for transforming JSON and XML data into mock data, using schema generation to automate the process. Ideal for testing and development.
 
 ## Features
