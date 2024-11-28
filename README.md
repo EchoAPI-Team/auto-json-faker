@@ -5,7 +5,6 @@
 ## Features
 
 - Automatically parses JSON5 and XML inputs.
-- Converts data to JSON Schema.
 - Generates realistic mock data.
 - Easy integration into development workflows.
 
