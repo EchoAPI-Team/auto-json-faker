@@ -1,6 +1,6 @@
 {
   "name": "auto-json-faker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Processing data returned by AI.",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,6 @@
     "apipost-mock-schema": "^0.0.46",
     "json2json-schema": "^0.2.8",
     "json5": "^2.2.3",
-    "lodash": "^4.17.21",
-    "xml-js": "^1.6.11",
-    "xml2js": "^0.6.2"
+    "lodash": "^4.17.21"
   }
 }
