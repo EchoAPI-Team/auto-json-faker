@@ -67,19 +67,3 @@ const faker = (str, lang = 'en', ai = false) => {               // Export a modu
     })
 }
 module.exports = faker
-
-for (let i = 0; i < 5; i++) {
-    faker(`{
-        "id": 5,
-        "username": "Partridge Forswear",
-        "firstName": "Numb",
-        "lastName": "Too",
-        "email": "Randal17@gmail.com",
-        "password": "",
-        "phone": "Besides",
-        "userStatus": 6
-    }`).then((res) => {
-        console.log(res)
-    })
-}
-

@@ -1,6 +1,6 @@
 {
   "name": "auto-json-faker",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Processing data returned by AI.",
   "main": "index.js",
   "scripts": {
@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/EchoAPI-Team/auto-json-faker#readme",
   "dependencies": {
-    "apipost-mock-schema": "^0.0.47",
-    "json2json-schema": "^0.2.9",
+    "apipost-mock-schema": "^0.0.48",
+    "json2json-schema": "^0.2.10",
     "json5": "^2.2.3",
     "lodash": "^4.17.21"
   }
