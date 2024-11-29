@@ -2,19 +2,19 @@ const { toJsonSchema } = require("json2json-schema"),  // Import the json2json-s
     _ = require('lodash'),                            // Import lodash for utility functions
     JSON5 = require('json5'),                         // Import JSON5 to parse JSON5 formatted strings
     // { js2xml, xml2js } = require('xml-js'),                       // Import xml2js to parse XML strings into JavaScript objects
-    jsf = require('apipost-mock-schema'),             // Import apipost-mock-schema to generate mock data from a schema
-    jsfObj = new jsf();                               // Create a new instance of the mock schema generator
+    jsf = require('apipost-mock-schema');             // Import apipost-mock-schema to generate mock data from a schema
 
-module.exports = (str, ai = false) => {               // Export a module function that takes a string, and a boolean `ai` as parameters
+const faker = (str, lang = 'en', ai = false) => {               // Export a module function that takes a string, and a boolean `ai` as parameters
     return new Promise((resolve, reject) => {         // Return a new Promise
         if (!_.isString(str)) {                       // Check if the input is not a string
-            resolve(String(str))                      // Resolve the promise with the string representation of the input
+            resolve(JSON5.stringify(str, null, "\t"))                      // Resolve the promise with the string representation of the input
         }
 
         try {
             const json = JSON5.parse(str);    // Parse the string as JSON5
             try {
                 const schema = toJsonSchema(json);           // Convert JSON to JSON Schema
+                const jsfObj = new jsf({ lang });
                 jsfObj.mock(schema).then(res => {            // Generate mock data from the schema
                     resolve(JSON.stringify(res, null, "\t")); // Resolve the promise with the mock data as a pretty-printed JSON
                 }).catch(err => {
@@ -66,3 +66,20 @@ module.exports = (str, ai = false) => {               // Export a module functio
         // });
     })
 }
+module.exports = faker
+
+for (let i = 0; i < 5; i++) {
+    faker(`{
+        "id": 5,
+        "username": "Partridge Forswear",
+        "firstName": "Numb",
+        "lastName": "Too",
+        "email": "Randal17@gmail.com",
+        "password": "",
+        "phone": "Besides",
+        "userStatus": 6
+    }`).then((res) => {
+        console.log(res)
+    })
+}
+
